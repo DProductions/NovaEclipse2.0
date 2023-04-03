@@ -1,0 +1,4 @@
+Pistol
+Knife
+Punch
+Kick

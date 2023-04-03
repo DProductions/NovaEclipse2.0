@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovaEclipse2.0", "NovaEclipse2.0\NovaEclipse2.0.csproj", "{8A4D81AD-358E-487C-B30B-DAF014B8EBCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neClassLibrary1", "neClassLibrary1\neClassLibrary1.csproj", "{8019DEDD-E610-4918-ABFA-4D23EE5A1F4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A4D81AD-358E-487C-B30B-DAF014B8EBCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A4D81AD-358E-487C-B30B-DAF014B8EBCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A4D81AD-358E-487C-B30B-DAF014B8EBCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A4D81AD-358E-487C-B30B-DAF014B8EBCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8019DEDD-E610-4918-ABFA-4D23EE5A1F4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8019DEDD-E610-4918-ABFA-4D23EE5A1F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8019DEDD-E610-4918-ABFA-4D23EE5A1F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8019DEDD-E610-4918-ABFA-4D23EE5A1F4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {584A7F29-DDB1-43F4-89D7-D9AA6971E083}
+	EndGlobalSection
+EndGlobal
