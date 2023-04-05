@@ -3,7 +3,7 @@
 * CSC 153
 * Daniel Parks
 * Nova Eclipse
-* 
+* 04 April 2023
 * SPRINT 4 completed. 
 */
 
@@ -22,16 +22,12 @@ namespace NovaEclipse2
     {
         static void Main(string[] args)
         {
-            // Create instancce of Menu , 
             Menu menu = new Menu();
 
-            // While state ment to continually repeat menue
             while (true)
             {
-                // Display menue, save input as 'int option'
                 int option = menu.Display();
 
-                //Call method for each selection
                 if (option == 1)
                 {
                     menu.DisplayRooms();
@@ -52,15 +48,11 @@ namespace NovaEclipse2
                 {
                     menu.DisplayItems();
                 }
-
-                // Selecting '6' exits program
                 else if (option == 6)
                 {
                     Console.WriteLine("Exiting program...");
                     break;
                 }
-
-                // Else statement catches invalid responses
                 else
                 {
                     Console.WriteLine("Invalid input. Please enter a number between 1 and 6.");
