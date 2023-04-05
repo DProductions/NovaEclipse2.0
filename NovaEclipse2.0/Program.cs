@@ -22,36 +22,19 @@ namespace NovaEclipse2
     {
         static void Main(string[] args)
         {
-            // Create instancce of Menu , 
-            Menu menu = new Menu();
+<<<<<<<<< Temporary merge branch 1
+            Console.SetCursorPosition(0, 10);
 
-            // While state ment to continually repeat menue
-            while (true)
-            {
-                // Display menue, save input as 'int option'
-                int option = menu.Display();
+            // Display the instructions
+            Console.WriteLine("Instructions:");
+            Console.WriteLine("Press any key to start the game.");
+            Console.WriteLine("Use arrow keys to move the player.");
+            Console.WriteLine("Press 'Q' to quit the game.");
 
-                //Call method for each selection
-                if (option == 1)
-                {
-                    menu.DisplayRooms();
-                }
-                else if (option == 2)
-                {
-                    menu.DisplayWeapons();
-                }
-                else if (option == 3)
-                {
-                    menu.DisplayPotions();
-                }
-                else if (option == 4)
-                {
-                    menu.DisplayTreasure();
-                }
-                else if (option == 5)
-                {
-                    menu.DisplayItems();
-                }
+            // Wait for user input
+            Console.ReadKey();
+=========
+>>>>>>>>> Temporary merge branch 2
 
                 // Selecting '6' exits program
                 else if (option == 6)
