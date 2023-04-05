@@ -1,0 +1,5 @@
+Turtle
+Fox
+Neighbor
+Gang (3 foes)0
+Bear
