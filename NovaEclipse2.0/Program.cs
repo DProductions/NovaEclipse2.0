@@ -36,11 +36,7 @@ Console.WriteLine("Press 'q' to quit.");
         static void Main(string[] args)
 
         {
-
-            // Read the files and create arrays
-            string[] rooms = File.ReadAllLines(@"..\..\..\..\NovaEclipse2.0\NovaEclipse2.0\Variables\rooms.txt");
-  
-
+            Menu menu = new Menu();
 
             int currentRoomIndex = 0;
             Locked();
@@ -56,59 +52,29 @@ Console.WriteLine("Press 'q' to quit.");
                 // Process user input
                 switch (key.KeyChar)
                 {
-                    case 'w':
-                    case 'W':
-                        if (currentRoomIndex == rooms.Length - 1)
-                        {
-                            Console.WriteLine("You cannot go further. There are no more rooms.");
-                        }
-                        else
-                        {
-                            currentRoomIndex++;
-                            Console.WriteLine($"You moved to {rooms[currentRoomIndex]}.");
-                        }
-                        break;
-
-                    case 's':
-                    case 'S':
-                        if (currentRoomIndex == 0)
-                        {
-                            Console.WriteLine("You cannot go back. You are already in the first room.");
-                        }
-                        else
-                        {
-                            currentRoomIndex--;
-                            Console.WriteLine($"You moved to {rooms[currentRoomIndex]}.");
-                        }
-                        break;
-
-                    case 'q':
-                    case 'Q':
-                        Console.WriteLine("Exiting program.");
-                        return;
-                    case 'c':
-                    case 'C':
-                        Menu.DisplayWeapons();
-                        break;
-                    case 'f':
-                    case 'F':
-                        Menu.DisplayPotions();
-                        break;
-                    case 'z':
-                    case 'Z':
-                        Menu.DisplayTreasure();
-                        break;
-                    case 'e':
-                    case 'E':
-                        Menu.DisplayItems();
-                        break;
-                    case 'x':
-                    case 'X':
-                        Menu.DisplayMobs();
-                        break;
-                    default:
-                        Console.WriteLine("Invalid input. Please try again.");
-                        break;
+                    menu.DisplayRooms();
+                }
+                else if (option == 2)
+                {
+                    menu.DisplayWeapons();
+                }
+                else if (option == 3)
+                {
+                    menu.DisplayPotions();
+                }
+                else if (option == 4)
+                {
+                    menu.DisplayTreasure();
+                }
+                else if (option == 5)
+                {
+                    menu.DisplayItems();
+                }
+>>>>>>>>> Temporary merge branch 2
+                else if (option == 6)
+                {
+                    Console.WriteLine("Exiting program...");
+                    break;
                 }
 
                 Console.WriteLine();
